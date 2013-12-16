@@ -173,9 +173,9 @@ Will output "Dec 16th, 2013" and "Dec 16th, 2013 is here!". Here are the format 
       <th colspan="3">Timezone</th>
     </tr>
     <tr>
-      <td>e</td>
-      <td>(unsuported)</td>
-      <td>Timezone identifier (added in PHP 5.1.0)Examples: UTC, GMT, Atlantic/Azorest</td>
+      <td>e (unsuported)</td>
+      <td>Timezone identifier</td>
+      <td>UTC, GMT, Atlantic/Azorest</td>
     </tr>
     <tr>
       <td>I</td>
