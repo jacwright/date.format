@@ -65,18 +65,10 @@
 
     // Simulates PHP's date function
     Date.prototype.format = function(format) {
-        var returnStr = '';
-        var replace = replaceChars;
-        for (var i = 0; i < format.length; i++) {       var curChar = format.charAt(i);         if (i - 1 >= 0 && format.charAt(i - 1) == "\\") {
-                returnStr += curChar;
-            }
-            else if (replace[curChar]) {
-                returnStr += replace[curChar].call(this);
-            } else if (curChar != "\\"){
-                returnStr += curChar;
-            }
-        }
-        return returnStr;
+        var date = this;
+        return format.replace(/(\\?)(.)/g, function(_, esc, chr) {
+            return (esc === '' && replaceChars[chr]) ? replaceChars[chr].call(date) : chr;
+        });
     };
 
 }).call(this);
