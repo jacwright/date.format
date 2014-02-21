@@ -8,9 +8,9 @@
     
         // Day
         d: function() { return (this.getDate() < 10 ? '0' : '') + this.getDate(); },
-        D: function() { return Date.replaceChars.shortDays[this.getDay()]; },
+        D: function() { return replaceChars.shortDays[this.getDay()]; },
         j: function() { return this.getDate(); },
-        l: function() { return Date.replaceChars.longDays[this.getDay()]; },
+        l: function() { return replaceChars.longDays[this.getDay()]; },
         N: function() { return this.getDay() + 1; },
         S: function() { return (this.getDate() % 10 == 1 && this.getDate() != 11 ? 'st' : (this.getDate() % 10 == 2 && this.getDate() != 12 ? 'nd' : (this.getDate() % 10 == 3 && this.getDate() != 13 ? 'rd' : 'th'))); },
         w: function() { return this.getDay(); },
@@ -18,9 +18,9 @@
         // Week
         W: function() { var d = new Date(this.getFullYear(), 0, 1); return Math.ceil((((this - d) / 86400000) + d.getDay() + 1) / 7); }, // Fixed now
         // Month
-        F: function() { return Date.replaceChars.longMonths[this.getMonth()]; },
+        F: function() { return replaceChars.longMonths[this.getMonth()]; },
         m: function() { return (this.getMonth() < 9 ? '0' : '') + (this.getMonth() + 1); },
-        M: function() { return Date.replaceChars.shortMonths[this.getMonth()]; },
+        M: function() { return replaceChars.shortMonths[this.getMonth()]; },
         n: function() { return this.getMonth() + 1; },
         t: function() { var d = new Date(); return new Date(d.getFullYear(), d.getMonth(), 0).getDate() }, // Fixed now, gets #days of date
         // Year
