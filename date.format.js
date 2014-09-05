@@ -12,7 +12,7 @@
         D: function() { return Date.shortDays[this.getDay()]; },
         j: function() { return this.getDate(); },
         l: function() { return Date.longDays[this.getDay()]; },
-        N: function() { return this.getDay() + 1; },
+        N: function() { return (this.getDay() == 0 ? 7 : this.getDay()); },
         S: function() { return (this.getDate() % 10 == 1 && this.getDate() != 11 ? 'st' : (this.getDate() % 10 == 2 && this.getDate() != 12 ? 'nd' : (this.getDate() % 10 == 3 && this.getDate() != 13 ? 'rd' : 'th'))); },
         w: function() { return this.getDay(); },
         z: function() { var d = new Date(this.getFullYear(),0,1); return Math.ceil((this - d) / 86400000); }, // Fixed now
