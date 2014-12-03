@@ -52,7 +52,7 @@
         u: function() { var m = this.getMilliseconds(); return (m < 10 ? '00' : (m < 100 ?
     '0' : '')) + m; },
         // Timezone
-        e: function() { return "Not Yet Supported"; },
+        e: function() { return /\((.*)\)/.exec(new Date().toString())[1]; },
         I: function() {
             var DST = null;
                 for (var i = 0; i < 12; ++i) {
