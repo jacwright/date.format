@@ -1,10 +1,10 @@
 (function() {
-    
+
     Date.shortMonths = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     Date.longMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     Date.shortDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     Date.longDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    
+
     // defining patterns
     var replaceChars = {
         // Day
@@ -17,7 +17,7 @@
         w: function() { return this.getDay(); },
         z: function() { var d = new Date(this.getFullYear(),0,1); return Math.ceil((this - d) / 86400000); }, // Fixed now
         // Week
-        W: function() { 
+        W: function() {
             var target = new Date(this.valueOf());
             var dayNr = (this.getDay() + 6) % 7;
             target.setDate(target.getDate() - dayNr + 3);
@@ -33,7 +33,14 @@
         m: function() { return (this.getMonth() < 9 ? '0' : '') + (this.getMonth() + 1); },
         M: function() { return Date.shortMonths[this.getMonth()]; },
         n: function() { return this.getMonth() + 1; },
-        t: function() { var d = new Date(); return new Date(d.getFullYear(), d.getMonth(), 0).getDate() }, // Fixed now, gets #days of date
+        t: function() {
+            var year = this.getFullYear(), nextMonth = this.getMonth() + 1;
+            if (nextMonth === 12) {
+                year = year++;
+                nextMonth = 0;
+            }
+            return new Date(year, nextMonth, 0).getDate();
+        },
         // Year
         L: function() { var year = this.getFullYear(); return (year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)); },   // Fixed now
         o: function() { var d  = new Date(this.valueOf());  d.setDate(d.getDate() - ((this.getDay() + 6) % 7) + 3); return d.getFullYear();}, //Fixed now
@@ -58,7 +65,7 @@
                 for (var i = 0; i < 12; ++i) {
                         var d = new Date(this.getFullYear(), i, 1);
                         var offset = d.getTimezoneOffset();
-    
+
                         if (DST === null) DST = offset;
                         else if (offset < DST) { DST = offset; break; }                     else if (offset > DST) break;
                 }
