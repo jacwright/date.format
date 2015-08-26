@@ -10,6 +10,7 @@ alert(myDate.format('M jS, Y \\i\\s \\h\\e\\r\\e!'));
 
 Will output "Dec 16th, 2013" and "Dec 16th, 2013 is here!". Here are the format options that may be used (taken from php.net and modified a bit):
 
+
 <table>
   <thead>
     <tr>
