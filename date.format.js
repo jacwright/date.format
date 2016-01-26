@@ -26,7 +26,9 @@
             if (target.getDay() !== 4) {
                 target.setMonth(0, 1 + ((4 - target.getDay()) + 7) % 7);
             }
-            return 1 + Math.ceil((firstThursday - target) / 604800000);
+            var retVal = 1 + Math.ceil((firstThursday - target) / 604800000);
+          
+            return (retVal < 10 ? '0' + retVal : retVal);
         },
         // Month
         F: function() { return Date.longMonths[this.getMonth()]; },
