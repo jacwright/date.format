@@ -1,6 +1,16 @@
+## Date Format
+
 This was developed to allow for the formatting of dates in JavaScript and ActionScript like PHP can do. I actually just took the documentation from the PHP date function and went down the list implementing every option that I could do easily. I know more support could be added, but I didn’t need it (and still don’t). If anyone embellishes on this let me know and we can post better versions!
 
 Using it is simple, but you may need to refer to the available format string options often to remember how to use it. I always need to refer to PHP’s date documentation every time I use it. You may also escape letters to make them literal, but be sure to escape your escape so Javascript can handle the string correctly.
+
+## Installation
+
+  You can install it easy using bower:
+
+  bower install date-format
+
+## Usage
 
 ```javascript
 var myDate = new Date();
@@ -10,7 +20,7 @@ alert(myDate.format('M jS, Y \\i\\s \\h\\e\\r\\e!'));
 
 Will output "Dec 16th, 2013" and "Dec 16th, 2013 is here!". Here are the format options that may be used (taken from php.net and modified a bit):
 
-
+## Supported identifiers
 <table>
   <thead>
     <tr>
@@ -213,18 +223,18 @@ Will output "Dec 16th, 2013" and "Dec 16th, 2013 is here!". Here are the format 
     </tr>
     <tr>
       <td>r</td>
-      <td><a href="http://www.faqs.org/rfcs/rfc2822">RFC 2822</a> formatted date</td>
+      <td><a href="http://www.faqs.org/rfcs/rfc2822" target="_blank">RFC 2822</a> formatted date</td>
       <td>Example: Thu, 21 Dec 2000 16:01:07 +0200</td>
     </tr>
     <tr>
       <td>U</td>
       <td>Seconds since the Unix Epoch (January 1 1970 00:00:00 GMT)</td>
-      <td>See also <a href="http://us2.php.net/manual/en/function.time.php">time()</a></td>
+      <td>See also <a href="http://us2.php.net/manual/en/function.time.php" target="_blank">time()</a></td>
     </tr>
   </tbody>
 </table>
 
-Contributors:
+## Contributors:
 * Jacob Wright
 * Tomas Theunissen
 * D’n Russler
