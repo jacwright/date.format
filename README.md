@@ -8,7 +8,7 @@ Using it is simple, but you may need to refer to the available format string opt
 
   You can install it easy using bower:
 
-  bower install date-format
+  bower install date_format
 
 ## Usage
 
