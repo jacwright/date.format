@@ -217,7 +217,7 @@ Will output "Dec 16th, 2013" and "Dec 16th, 2013 is here!". Here are the format 
       <th colspan="3">Full Date/Time</th>
     </tr>
     <tr>
-     </tr>c</td>
+      <td>c</td>
       <td>ISO 8601 date</td>
       <td>2004-02-12T15:19:21+00:00</td>
     </tr>
