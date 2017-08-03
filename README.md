@@ -17,14 +17,15 @@ Using it is simple, but you may need to refer to the available format string opt
 
 ```javascript
 var myDate = new Date();
-alert(myDate.format('d-m-Y'));
-alert(myDate.format('M jS, Y'));
-alert(myDate.format('M jS, Y \\i\\s \\h\\e\\r\\e!'));
+alert(myDate.format('d-m-Y')); // Outputs "03-08-2017"
+alert(myDate.format('M jS, Y')); // Outputs "Dec 16th, 2013"
+alert(myDate.format('M jS, Y \\i\\s \\h\\e\\r\\e!')); // Outputs "Dec 16th, 2013 is here!"
 ```
 
-Will output "Dec 16th, 2013" and "Dec 16th, 2013 is here!". Here are the format options that may be used (taken from php.net and modified a bit):
-
 ## Supported identifiers
+
+Taken from http://php.net/manual/en/function.date.php and modified.
+
 <table>
   <thead>
     <tr>
