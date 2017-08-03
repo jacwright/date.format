@@ -9,7 +9,8 @@ Using it is simple, but you may need to refer to the available format string opt
 - [Download the latest release (zipped).](https://github.com/jacwright/date.format/archive/master.zip)
 - Clone the repo: `git clone https://github.com/jacwright/date.format`
 - Install with [npm](https://www.npmjs.com): `npm install date.format.js`
-- Install with [Bower](https://bower.io): `bower install date_format`
+- Install with [yarn](https://yarnpkg.com): `yarn add date.format.js`
+- Install with [Bower](https://bower.io): `bower install date.format.js`
 
 ## Usage
 

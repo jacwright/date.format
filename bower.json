@@ -1,8 +1,8 @@
 {
-  "name": "date_format",
-  "version": "1.0.0",
+  "name": "date.format.js",
+  "version": "1.0.2",
   "homepage": "https://github.com/jacwright/date.format",
-  "description": "Date.format is used for the formatting of dates",
+  "description": "A JavaScript date format library that uses the same method as PHP's date() function.",
   "main": "date.format.js",
   "keywords": [
     "date",
@@ -11,5 +11,12 @@
   "authors": [
     "jacwright"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
