@@ -243,9 +243,3 @@ Taken from http://php.net/manual/en/function.date.php and modified.
     </tr>
   </tbody>
 </table>
-
-## Contributors:
-* Jacob Wright
-* Tomas Theunissen
-* D’n Russler
-* Haravikk
