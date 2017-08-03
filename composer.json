@@ -1,5 +1,5 @@
 {
-    "name": "kevin/date.format.js",
+    "name": "kevit-development/date.format.js",
     "description": "A JavaScript date format library that uses the same method as PHP's date() function.",
     "type": "library",
     "license": "MIT",
