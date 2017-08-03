@@ -1,0 +1,19 @@
+{
+  "name": "date.format.js",
+  "version": "1.0.0",
+  "description": "A JavaScript date format library that uses the same method as PHP's date() function.",
+  "main": "date.format.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacwright/date.format.git"
+  },
+  "author": "jacwright",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacwright/date.format/issues"
+  },
+  "homepage": "https://github.com/jacwright/date.format#readme"
+}
