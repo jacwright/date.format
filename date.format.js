@@ -5,7 +5,7 @@
     Date.shortDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     Date.longDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-    // defining patterns
+    // Defining patterns
     var replaceChars = {
         // Day
         d: function() { return (this.getDate() < 10 ? '0' : '') + this.getDate(); },
@@ -27,7 +27,7 @@
                 target.setMonth(0, 1 + ((4 - target.getDay()) + 7) % 7);
             }
             var retVal = 1 + Math.ceil((firstThursday - target) / 604800000);
-          
+
             return (retVal < 10 ? '0' + retVal : retVal);
         },
         // Month
@@ -58,8 +58,8 @@
         H: function() { return (this.getHours() < 10 ? '0' : '') + this.getHours(); },
         i: function() { return (this.getMinutes() < 10 ? '0' : '') + this.getMinutes(); },
         s: function() { return (this.getSeconds() < 10 ? '0' : '') + this.getSeconds(); },
-        u: function() { var m = this.getMilliseconds(); return (m < 10 ? '00' : (m < 100 ?
-    '0' : '')) + m; },
+        //u: function() { var m = this.getMilliseconds(); return (m < 10 ? '00' : (m < 100 ? '0' : '')) + m; }, // Doesn't work as expected, should return time in (6-figures) 000000 and not (3-figures) 000. Microseconds, 1 millisecond = 1000 microseconds. Works the same as date.format('v') now.
+		v: function() { return (this.getMilliseconds() < 10 ? '00' : (this.getMilliseconds() < 100 ? '0' : '')) + this.getMilliseconds(); },
         // Timezone
         e: function() { return /\((.*)\)/.exec(new Date().toString())[1]; },
         I: function() {

@@ -6,14 +6,16 @@ Using it is simple, but you may need to refer to the available format string opt
 
 ## Installation
 
-  You can install it easy using bower:
-
-  bower install date_format
+- [Download the latest release (zipped).](https://github.com/jacwright/date.format/archive/master.zip)
+- Clone the repo: `git clone https://github.com/jacwright/date.format`
+- Install with [npm](https://www.npmjs.com): `npm install date.format.js`
+- Install with [Bower](https://bower.io): `bower install date_format`
 
 ## Usage
 
 ```javascript
 var myDate = new Date();
+alert(myDate.format('d-m-Y'));
 alert(myDate.format('M jS, Y'));
 alert(myDate.format('M jS, Y \\i\\s \\h\\e\\r\\e!'));
 ```
@@ -49,7 +51,7 @@ Will output "Dec 16th, 2013" and "Dec 16th, 2013 is here!". Here are the format 
       <td>1 to 31</td>
     </tr>
     <tr>
-      <td>l</td>
+      <td>l (lowercase L)</td>
       <td>A full textual representation of the day of the week</td>
       <td>Sunday through Saturday</td>
     </tr>
@@ -180,6 +182,11 @@ Will output "Dec 16th, 2013" and "Dec 16th, 2013 is here!". Here are the format 
       <td>Seconds, with leading zeros</td>
       <td>00 through 59</td>
     </tr>
+	<tr>
+      <td>v</td>
+	  <td>Milliseconds</td>
+	  <td>Example: 654</td>
+	</tr>
     <tr>
       <th colspan="3">Timezone</th>
     </tr>
@@ -189,7 +196,7 @@ Will output "Dec 16th, 2013" and "Dec 16th, 2013 is here!". Here are the format 
       <td>UTC, GMT, Atlantic/Azorest</td>
     </tr>
     <tr>
-      <td>I</td>
+      <td>I (capital i)</td>
       <td>Whether or not the date is in daylights savings time</td>
       <td>1 if Daylight Savings Time, 0 otherwise.</td>
     </tr>
@@ -200,7 +207,7 @@ Will output "Dec 16th, 2013" and "Dec 16th, 2013 is here!". Here are the format 
     </tr>
     <tr>
       <td>P</td>
-      <td>Difference to Greenwich time (GMT) with colon between hours and minutes (added in PHP 5.1.3)</td>
+      <td>Difference to Greenwich time (GMT) with colon between hours and minutes</td>
       <td>Example: +02:00</td>
     </tr>
     <tr>
@@ -239,4 +246,3 @@ Will output "Dec 16th, 2013" and "Dec 16th, 2013 is here!". Here are the format 
 * Tomas Theunissen
 * D’n Russler
 * Haravikk
- 
