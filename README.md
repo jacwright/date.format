@@ -22,6 +22,22 @@ alert(myDate.format('M jS, Y')); // Outputs "Dec 16th, 2013"
 alert(myDate.format('M jS, Y \\i\\s \\h\\e\\r\\e!')); // Outputs "Dec 16th, 2013 is here!"
 ```
 
+## Localisation
+
+Download your preferred locale [here]() and require it before `date.format`.
+
+Localisation is supported for the following identifiers:
+<table>
+  <tbody>
+    <tr>
+      <td>D</td>
+	  <td>l (lowercase L)</td>
+	  <td>F</td>
+	  <td>M</td>
+	</tr>
+  </tbody>
+</table>
+
 ## Supported identifiers
 
 Taken from http://php.net/manual/en/function.date.php and modified.
@@ -194,9 +210,9 @@ Taken from http://php.net/manual/en/function.date.php and modified.
       <th colspan="3">Timezone</th>
     </tr>
     <tr>
-      <td>e (unsuported)</td>
+      <td>e</td>
       <td>Timezone identifier</td>
-      <td>UTC, GMT, Atlantic/Azorest</td>
+      <td>Atlantic/Azorest, Europe/London</td>
     </tr>
     <tr>
       <td>I (capital i)</td>
@@ -228,18 +244,18 @@ Taken from http://php.net/manual/en/function.date.php and modified.
     </tr>
     <tr>
       <td>c</td>
-      <td>ISO 8601 date</td>
+      <td><a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank">ISO 8601</a> formatted date</td>
       <td>2004-02-12T15:19:21+00:00</td>
     </tr>
     <tr>
       <td>r</td>
-      <td><a href="http://www.faqs.org/rfcs/rfc2822" target="_blank">RFC 2822</a> formatted date</td>
+      <td><a href="https://www.ietf.org/rfc/rfc2822.txt" target="_blank">RFC 2822</a> formatted date</td>
       <td>Example: Thu, 21 Dec 2000 16:01:07 +0200</td>
     </tr>
     <tr>
       <td>U</td>
       <td>Seconds since the Unix Epoch (January 1 1970 00:00:00 GMT)</td>
-      <td>See also <a href="http://us2.php.net/manual/en/function.time.php" target="_blank">time()</a></td>
+      <td>Example: 1501804996</td>
     </tr>
   </tbody>
 </table>
