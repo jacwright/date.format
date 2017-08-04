@@ -193,9 +193,9 @@ Will output "Dec 16th, 2013" and "Dec 16th, 2013 is here!". Here are the format 
       <th colspan="3">Timezone</th>
     </tr>
     <tr>
-      <td>e (unsuported)</td>
+      <td>e</td>
       <td>Timezone identifier</td>
-      <td>UTC, GMT, Atlantic/Azorest</td>
+      <td>Atlantic/Azorest, Europe/London</td>
     </tr>
     <tr>
       <td>I (capital i)</td>
@@ -227,18 +227,18 @@ Will output "Dec 16th, 2013" and "Dec 16th, 2013 is here!". Here are the format 
     </tr>
     <tr>
       <td>c</td>
-      <td>ISO 8601 date</td>
+      <td><a href="https://www.iso.org/iso-8601-date-and-time-format.html" target="_blank">ISO 8601</a> formatted date</td>
       <td>2004-02-12T15:19:21+00:00</td>
     </tr>
     <tr>
       <td>r</td>
-      <td><a href="http://www.faqs.org/rfcs/rfc2822" target="_blank">RFC 2822</a> formatted date</td>
+      <td><a href="https://www.ietf.org/rfc/rfc2822.txt" target="_blank">RFC 2822</a> formatted date</td>
       <td>Example: Thu, 21 Dec 2000 16:01:07 +0200</td>
     </tr>
     <tr>
       <td>U</td>
       <td>Seconds since the Unix Epoch (January 1 1970 00:00:00 GMT)</td>
-      <td>See also <a href="http://us2.php.net/manual/en/function.time.php" target="_blank">time()</a></td>
+      <td>Example: 1501804996</td>
     </tr>
   </tbody>
 </table>
