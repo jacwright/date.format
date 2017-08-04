@@ -1,4 +1,4 @@
-## date.format
+# date.format
 
 This was developed to allow for the formatting of dates in JavaScript and ActionScript like PHP can do. I actually just took the documentation from the PHP date function and went down the list implementing every option that I could do easily. I know more support could be added, but I didn’t need it (and still don’t). If anyone embellishes on this let me know and we can post better versions!
 
@@ -25,7 +25,7 @@ alert(myDate.format('M jS, Y \\i\\s \\h\\e\\r\\e!')); // Outputs "Dec 16th, 2013
 ## Localisation
 
 Include your preferred `locale.js` from the locales folder and require it before you require `date.format`.
-```javascript
+```html
 <script src="locale.js"></script>
 <script src="date.format"></script>
 ```
