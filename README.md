@@ -25,7 +25,6 @@ alert(myDate.format('M jS, Y \\i\\s \\h\\e\\r\\e!')); // Outputs "Dec 16th, 2013
 ## Localisation
 
 Include your preferred `locale.js` from the locales folder and require it before you require `date.format`.
-Example:
 ```javascript
 <script src="locale.js"></script>
 <script src="date.format"></script>
