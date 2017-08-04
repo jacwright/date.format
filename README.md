@@ -22,7 +22,7 @@ alert(myDate.format('M jS, Y')); // Outputs "Dec 16th, 2013"
 alert(myDate.format('M jS, Y \\i\\s \\h\\e\\r\\e!')); // Outputs "Dec 16th, 2013 is here!"
 ```
 
-## Localisation
+## Localization
 
 Include your preferred `locale.js` from the locales folder and require it before you require `date.format`.
 ```html
@@ -30,7 +30,7 @@ Include your preferred `locale.js` from the locales folder and require it before
 <script src="date.format"></script>
 ```
 
-Localisation is supported for the following identifiers:
+Localization is supported for the following identifiers:
 - D
 - l (lowercase L)
 - F
