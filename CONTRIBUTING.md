@@ -15,4 +15,4 @@ Testing can be done with the [date.format.testing](https://github.com/kevzdev/da
 - [Edvin Rab (BlackWiCKED)](https://github.com/BlackWiCKED)
 - [Cloady (cloady)](https://github.com/cloady)
 
-Special thanks to Tomas Theunissen, Haravikk and D’n Russler for contributing before the repository was published on GitHub.
+Thanks to Tomas Theunissen, Haravikk and D’n Russler for contributing before the repository was published on GitHub.
