@@ -7,7 +7,7 @@ Testing can be done with the [date.format.testing](https://github.com/kevit-deve
 
 ## Contributors
 - [Jacob Wright (jacwright)](https://github.com/jacwright)
-- [Kevin (kevit-development)](https://github.com/kevit-development)
+- [Kevin (kevzdev)](https://github.com/kevzdev)
 - [Amol Udage (amoludage)](https://github.com/amoludage)
 - [Matvei Fisenko (MatveiFisenko)](https://github.com/MatveiFisenko)
 - [Spasa Mihajlović (spasa)](https://github.com/spasa)
