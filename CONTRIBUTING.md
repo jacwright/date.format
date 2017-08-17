@@ -3,7 +3,7 @@
 You can contribute to this repository by reporting [issues](https://github.com/jacwright/date.format/issues) and creating [pull requests](https://github.com/jacwright/date.format/pulls).
 
 ## Testing
-Testing can be done with the [date.format.testing](https://github.com/kevit-development/date.format.testing) library.
+Testing can be done with the [date.format.testing](https://github.com/kevzdev/date.format.testing) library.
 
 ## Contributors
 - [Jacob Wright (jacwright)](https://github.com/jacwright)
