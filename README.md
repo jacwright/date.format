@@ -10,8 +10,6 @@ Using it is simple, but you may need to refer to the available format string opt
 - Clone the repo: `git clone https://github.com/jacwright/date.format`
 - Install with [npm](https://www.npmjs.com): `npm install date.format.js`
 - Install with [yarn](https://yarnpkg.com): `yarn add date.format.js`
-- Install with [Composer](https://getcomposer.org): `composer require kevit-development/date.format.js`
-- Install with [Bower](https://bower.io): `bower install date.format.js`
 
 ## Usage
 
