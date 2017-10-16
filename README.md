@@ -12,12 +12,13 @@ Using it is simple, but you may need to refer to the available format string opt
 - Install with [yarn](https://yarnpkg.com): `yarn add date.format.js`
 
 ## Usage
+Escaping letters can be done by typing `\\` in front of the letter.
 
 ```javascript
 var myDate = new Date();
 alert(myDate.format('d-m-Y')); // Outputs "03-08-2017"
 alert(myDate.format('M jS, Y')); // Outputs "Dec 16th, 2013"
-alert(myDate.format('M jS, Y \\i\\s \\h\\e\\r\\e!')); // Outputs "Dec 16th, 2013 is here!"
+alert(myDate.format('\\T\\o\\d\\a\\y \\i\\s d-m-Y !!.')); // Outputs "Today is 16-10-2017 !!."
 ```
 
 ## Localization
