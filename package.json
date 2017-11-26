@@ -1,6 +1,6 @@
 {
   "name": "date.format.js",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "A JavaScript date format library that uses the same method as PHP's date() function.",
   "main": "date.format.min.js",
   "scripts": {
