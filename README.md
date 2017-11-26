@@ -54,7 +54,7 @@ Taken from [PHP's `date();` function](http://php.net/manual/en/function.date.php
     <tr>
       <td><a href="#d" aria-hidden="true" class="anchor" id="d">d</a></td>
       <td>Day of the month, 2 digits with leading zeros</td>
-      <td>`01` to `31`</td>
+      <td><pre>01</pre> to `31`</td>
     </tr>
     <tr>
       <td><a href="#D" aria-hidden="true" class="anchor" id="D">D</a></td>
