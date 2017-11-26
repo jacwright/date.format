@@ -14,5 +14,6 @@ Testing can be done with the [date.format.testing](https://github.com/kevzdev/da
 - [Thomas Hägglund (sirmadman)](https://github.com/sirmadman)
 - [Edvin Rab (BlackWiCKED)](https://github.com/BlackWiCKED)
 - [Cloady (cloady)](https://github.com/cloady)
+- [Ciprian Murariu (ciprianmp)](https://github.com/ciprianmp)
 
 Thanks to Tomas Theunissen, Haravikk and D’n Russler for contributing before the repository was published on GitHub.
