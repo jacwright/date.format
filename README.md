@@ -51,8 +51,8 @@ Taken from [PHP's `date();` function](http://php.net/manual/en/function.date.php
     <tr>
       <th colspan="3">Day</th>
     </tr>
-    <tr id="d">
-      <td>d</td>
+    <tr>
+      <td><a href="#d">d</a></td>
       <td>Day of the month, 2 digits with leading zeros</td>
       <td>01 to 31</td>
     </tr>
