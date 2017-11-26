@@ -52,7 +52,7 @@ Taken from [PHP's `date();` function](http://php.net/manual/en/function.date.php
       <th colspan="3">Day</th>
     </tr>
     <tr>
-      <td><a href="#d">d</a></td>
+      <td><a href="#d" aria-hidden="true" class="anchor" id="d">d</a></td>
       <td>Day of the month, 2 digits with leading zeros</td>
       <td>01 to 31</td>
     </tr>
