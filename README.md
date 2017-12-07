@@ -118,7 +118,7 @@ Taken from [PHP's `date();` function](http://php.net/manual/en/function.date.php
       		<td><code>Jan</code> through <code>Dec</code></td>
     	</tr>
     	<tr>
-      		<td><a href="#n" aria-hidden="true" class="anchor" id="n">n/a></td>
+      		<td><a href="#n" aria-hidden="true" class="anchor" id="n">n</a></td>
       		<td>Numeric representation of a month, without leading zeros</td>
       		<td><code>1</code> through <code>12</code></td>
     	</tr>
