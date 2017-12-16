@@ -8,7 +8,6 @@ Using it is simple, but you may need to refer to the available format string opt
 
 - [Download the latest release (zipped) and include it in your project folder](https://github.com/jacwright/date.format/archive/master.zip)
 - Clone the repo: `git clone https://github.com/jacwright/date.format`
-- Install with [npm](https://www.npmjs.com): `npm install date.format.js`
 
 ## Usage
 Escaping letters can be done by typing `\\` in front of a letter.
