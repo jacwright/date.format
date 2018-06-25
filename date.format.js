@@ -81,7 +81,7 @@
     // Full Date/Time
     c: function () { return this.format('Y-m-d\\TH:i:sP') },
     r: function () { return this.toString() },
-    U: function () { return this.getTime() / 1000 }
+    U: function () { return Math.floor(this.getTime() / 1000) }
   }
 
   // Simulates PHP's date function
