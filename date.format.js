@@ -49,7 +49,7 @@
     L: function () { var L = this.getFullYear(); return (L % 400 === 0 || (L % 100 !== 0 && L % 4 === 0)) },
     o: function () { var d = new Date(this.valueOf()); d.setDate(d.getDate() - ((this.getDay() + 6) % 7) + 3); return d.getFullYear() },
     Y: function () { return this.getFullYear() },
-    y: function () { return ('' + this.getFullYear()).substr(2) },
+    y: function () { return ('' + this.getFullYear()).substring(2) },
     // Time
     a: function () { return this.getHours() < 12 ? 'am' : 'pm' },
     A: function () { return this.getHours() < 12 ? 'AM' : 'PM' },
